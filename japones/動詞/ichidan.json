@@ -1,0 +1,92 @@
+[
+  {
+    "word": "食べる",
+    "translation": "comer",
+    "meaning": "ingerir alimentos (たべる)",
+    "ipa": "ta-be-ru"
+  },
+  {
+    "word": "見る",
+    "translation": "ver/mirar",
+    "meaning": "percibir con los ojos (みる)",
+    "ipa": "mi-ru"
+  },
+  {
+    "word": "起きる",
+    "translation": "levantarse",
+    "meaning": "salir de la cama o ponerse de pie (おきる)",
+    "ipa": "o-ki-ru"
+  },
+  {
+    "word": "寝る",
+    "translation": "dormir/acostarse",
+    "meaning": "estar en estado de descanso (ねる)",
+    "ipa": "ne-ru"
+  },
+  {
+    "word": "考える",
+    "translation": "pensar/considerar",
+    "meaning": "reflexionar o formar ideas (かんがえる)",
+    "ipa": "kan-ga-e-ru"
+  },
+  {
+    "word": "教える",
+    "translation": "enseñar",
+    "meaning": "impartir conocimiento (おしえる)",
+    "ipa": "o-shi-e-ru"
+  },
+  {
+    "word": "出る",
+    "translation": "salir/aparecer",
+    "meaning": "moverse hacia afuera o hacerse visible (でる)",
+    "ipa": "de-ru"
+  },
+  {
+    "word": "開ける",
+    "translation": "abrir",
+    "meaning": "abrir una puerta, ventana o recipiente (あける)",
+    "ipa": "a-ke-ru"
+  },
+  {
+    "word": "閉める",
+    "translation": "cerrar",
+    "meaning": "clausurar una abertura (しめる)",
+    "ipa": "shi-me-ru"
+  },
+  {
+    "word": "着る",
+    "translation": "vestir/ponerse",
+    "meaning": "ponerse ropa en la parte superior del cuerpo (きる)",
+    "ipa": "ki-ru"
+  },
+  {
+    "word": "忘れる",
+    "translation": "olvidar",
+    "meaning": "no recordar algo (わすれる)",
+    "ipa": "wa-su-re-ru"
+  },
+  {
+    "word": "疲れる",
+    "translation": "cansarse",
+    "meaning": "sentir fatiga física o mental (つかれる)",
+    "ipa": "tsu-ka-re-ru"
+  },
+  {
+    "word": "調べる",
+    "translation": "investigar/buscar",
+    "meaning": "examinar o buscar información (しらべる)",
+    "ipa": "shi-ra-be-ru"
+  },
+  {
+    "word": "止める",
+    "translation": "detener/parar",
+    "meaning": "cesar un movimiento o acción (やめる)",
+    "ipa": "ya-me-ru"
+  },
+  {
+    "word": "付ける",
+    "translation": "poner/adjuntar",
+    "meaning": "unir o colocar algo en contacto (つける)",
+    "ipa": "tsu-ke-ru"
+  }
+]

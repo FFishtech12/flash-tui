@@ -1,0 +1,176 @@
+[
+  {
+    "word": "beginnen (begann, begonnen)",
+    "translation": "empezar/comenzar",
+    "meaning": "dar inicio a algo",
+    "ipa": "bəˈɡɪnən"
+  },
+  {
+    "word": "bleiben (blieb, ist geblieben)",
+    "translation": "quedarse/permanecer",
+    "meaning": "permanecer en un lugar o estado",
+    "ipa": "ˈblaɪbn̩"
+  },
+  {
+    "word": "bringen (brachte, hat gebracht)",
+    "translation": "traer/llevar",
+    "meaning": "transportar algo hacia un lugar o persona",
+    "ipa": "ˈbʁɪŋən"
+  },
+  {
+    "word": "denken (dachte, hat gedacht)",
+    "translation": "pensar",
+    "meaning": "formar ideas o reflexionar",
+    "ipa": "ˈdɛŋkn̩"
+  },
+  {
+    "word": "dürfen (durfte, hat gedurft)",
+    "translation": "poder/tener permiso",
+    "meaning": "verbo modal de permiso (darf)",
+    "ipa": "ˈdʏʁfn̩"
+  },
+  {
+    "word": "fallen (fiel, ist gefallen)",
+    "translation": "caer",
+    "meaning": "descender por gravedad (fällt)",
+    "ipa": "ˈfalən"
+  },
+  {
+    "word": "fliegen (flog, ist geflogen)",
+    "translation": "volar",
+    "meaning": "desplazarse por el aire",
+    "ipa": "ˈfliːɡən"
+  },
+  {
+    "word": "fragen (fragte/frug, hat gefragt)",
+    "translation": "preguntar",
+    "meaning": "hacer una pregunta para obtener información",
+    "ipa": "ˈfʁaːɡn̩"
+  },
+  {
+    "word": "fühlen",
+    "translation": "sentir",
+    "meaning": "experimentar una sensación o emoción (regular)",
+    "ipa": "ˈfyːlən"
+  },
+  {
+    "word": "gewinnen (gewann, hat gewonnen)",
+    "translation": "ganar",
+    "meaning": "obtener victoria o premio",
+    "ipa": "ɡəˈvɪnən"
+  },
+  {
+    "word": "halten (hielt, hat gehalten)",
+    "translation": "sostener/mantener/parar",
+    "meaning": "sujetar algo o detenerse (hält)",
+    "ipa": "ˈhaltn̩"
+  },
+  {
+    "word": "heißen (hieß, hat geheißen)",
+    "translation": "llamarse/significar",
+    "meaning": "tener por nombre o significar",
+    "ipa": "ˈhaɪsn̩"
+  },
+  {
+    "word": "helfen (half, hat geholfen)",
+    "translation": "ayudar",
+    "meaning": "prestar asistencia a alguien (hilft)",
+    "ipa": "ˈhɛlfn̩"
+  },
+  {
+    "word": "liegen (lag, hat gelegen)",
+    "translation": "estar tumbado/ubicado",
+    "meaning": "estar en posición horizontal o situado",
+    "ipa": "ˈliːɡən"
+  },
+  {
+    "word": "mögen (mochte, hat gemocht)",
+    "translation": "gustar",
+    "meaning": "sentir agrado por algo o alguien (mag)",
+    "ipa": "ˈmøːɡən"
+  },
+  {
+    "word": "rufen (rief, hat gerufen)",
+    "translation": "llamar/gritar",
+    "meaning": "llamar en voz alta o por teléfono",
+    "ipa": "ˈʁuːfn̩"
+  },
+  {
+    "word": "schließen (schloss, hat geschlossen)",
+    "translation": "cerrar",
+    "meaning": "clausurar o poner fin a algo",
+    "ipa": "ˈʃliːsn̩"
+  },
+  {
+    "word": "schwimmen (schwamm, ist geschwommen)",
+    "translation": "nadar",
+    "meaning": "moverse en el agua",
+    "ipa": "ˈʃvɪmən"
+  },
+  {
+    "word": "singen (sang, hat gesungen)",
+    "translation": "cantar",
+    "meaning": "producir sonidos musicales con la voz",
+    "ipa": "ˈzɪŋən"
+  },
+  {
+    "word": "sitzen (saß, hat gesessen)",
+    "translation": "estar sentado",
+    "meaning": "permanecer en una silla o asiento",
+    "ipa": "ˈzɪtsn̩"
+  },
+  {
+    "word": "stehen (stand, hat gestanden)",
+    "translation": "estar de pie",
+    "meaning": "permanecer en posición vertical",
+    "ipa": "ˈʃteːən"
+  },
+  {
+    "word": "tragen (trug, hat getragen)",
+    "translation": "llevar/soportar",
+    "meaning": "cargar con algo o vestir (trägt)",
+    "ipa": "ˈtʁaːɡn̩"
+  },
+  {
+    "word": "treffen (traf, hat getroffen)",
+    "translation": "encontrarse/reunirse",
+    "meaning": "coincidir con alguien en un lugar (trifft)",
+    "ipa": "ˈtʁɛfn̩"
+  },
+  {
+    "word": "tun (tat, hat getan)",
+    "translation": "hacer",
+    "meaning": "realizar una acción (sinónimo de machen)",
+    "ipa": "tuːn"
+  },
+  {
+    "word": "vergessen (vergaß, hat vergessen)",
+    "translation": "olvidar",
+    "meaning": "no recordar algo (vergisst)",
+    "ipa": "fɛɐˈɡɛsn̩"
+  },
+  {
+    "word": "verlieren (verlor, hat verloren)",
+    "translation": "perder",
+    "meaning": "dejar de tener algo o no encontrar",
+    "ipa": "fɛɐˈliːrən"
+  },
+  {
+    "word": "verstehen (verstand, hat verstanden)",
+    "translation": "entender/comprender",
+    "meaning": "captar el significado de algo",
+    "ipa": "fɛɐˈʃteːən"
+  },
+  {
+    "word": "waschen (wusch, hat gewaschen)",
+    "translation": "lavar",
+    "meaning": "limpiar con agua (wäscht)",
+    "ipa": "ˈvaʃn̩"
+  },
+  {
+    "word": "ziehen (zog, hat/ist gezogen)",
+    "translation": "tirar/mudarse",
+    "meaning": "arrastrar algo o cambiar de residencia",
+    "ipa": "ˈtsiːən"
+  }
+]

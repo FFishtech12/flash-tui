@@ -1,0 +1,92 @@
+[
+  {
+    "word": "入る",
+    "translation": "entrar",
+    "meaning": "moverse hacia el interior (はいる)",
+    "ipa": "hai-ru"
+  },
+  {
+    "word": "出かける",
+    "translation": "salir (de casa)",
+    "meaning": "abandonar el hogar para hacer algo (でかける)",
+    "ipa": "de-ka-ke-ru"
+  },
+  {
+    "word": "帰る",
+    "translation": "volver/regresar",
+    "meaning": "retornar al lugar de origen (かえる)",
+    "ipa": "ka-e-ru"
+  },
+  {
+    "word": "走る",
+    "translation": "correr",
+    "meaning": "moverse rápidamente a pie (はしる)",
+    "ipa": "ha-shi-ru"
+  },
+  {
+    "word": "乗る",
+    "translation": "montar/subir",
+    "meaning": "subir a un vehículo o animal (のる)",
+    "ipa": "no-ru"
+  },
+  {
+    "word": "降りる",
+    "translation": "bajar/descender",
+    "meaning": "bajar de un vehículo o lugar elevado (おりる)",
+    "ipa": "o-ri-ru"
+  },
+  {
+    "word": "通る",
+    "translation": "pasar/atravesar",
+    "meaning": "moverse a través de un lugar (とおる)",
+    "ipa": "tō-ru"
+  },
+  {
+    "word": "渡る",
+    "translation": "cruzar",
+    "meaning": "atravesar un puente, calle o río (わたる)",
+    "ipa": "wa-ta-ru"
+  },
+  {
+    "word": "曲がる",
+    "translation": "girar/doblar",
+    "meaning": "cambiar de dirección (まがる)",
+    "ipa": "ma-ga-ru"
+  },
+  {
+    "word": "止まる",
+    "translation": "detenerse/pararse",
+    "meaning": "cesar el movimiento (とまる)",
+    "ipa": "to-ma-ru"
+  },
+  {
+    "word": "着く",
+    "translation": "llegar",
+    "meaning": "alcanzar un destino (つく)",
+    "ipa": "tsu-ku"
+  },
+  {
+    "word": "送る",
+    "translation": "enviar/acompañar",
+    "meaning": "mandar algo o escoltar a alguien (おくる)",
+    "ipa": "o-ku-ru"
+  },
+  {
+    "word": "運ぶ",
+    "translation": "transportar/llevar",
+    "meaning": "mover objetos de un lugar a otro (はこぶ)",
+    "ipa": "ha-ko-bu"
+  },
+  {
+    "word": "通う",
+    "translation": "asistir/frecuentar",
+    "meaning": "ir regularmente a un lugar (かよう)",
+    "ipa": "ka-yo-u"
+  },
+  {
+    "word": "戻る",
+    "translation": "regresar/volver",
+    "meaning": "retornar al punto de partida (もどる)",
+    "ipa": "mo-do-ru"
+  }
+]

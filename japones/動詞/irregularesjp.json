@@ -1,0 +1,92 @@
+[
+  {
+    "word": "する",
+    "translation": "hacer",
+    "meaning": "realizar una acción (verbo irregular más común)",
+    "ipa": "su-ru"
+  },
+  {
+    "word": "来る",
+    "translation": "venir",
+    "meaning": "moverse hacia el hablante (くる - irregular)",
+    "ipa": "ku-ru"
+  },
+  {
+    "word": "勉強する",
+    "translation": "estudiar",
+    "meaning": "adquirir conocimientos (べんきょうする)",
+    "ipa": "ben-kyō su-ru"
+  },
+  {
+    "word": "掃除する",
+    "translation": "limpiar",
+    "meaning": "hacer la limpieza (そうじする)",
+    "ipa": "sō-ji su-ru"
+  },
+  {
+    "word": "料理する",
+    "translation": "cocinar",
+    "meaning": "preparar alimentos (りょうりする)",
+    "ipa": "ryō-ri su-ru"
+  },
+  {
+    "word": "運転する",
+    "translation": "conducir",
+    "meaning": "manejar un vehículo (うんてんする)",
+    "ipa": "un-ten su-ru"
+  },
+  {
+    "word": "電話する",
+    "translation": "llamar por teléfono",
+    "meaning": "hacer una llamada telefónica (でんわする)",
+    "ipa": "den-wa su-ru"
+  },
+  {
+    "word": "旅行する",
+    "translation": "viajar",
+    "meaning": "desplazarse por placer o trabajo (りょこうする)",
+    "ipa": "ryo-kō su-ru"
+  },
+  {
+    "word": "散歩する",
+    "translation": "pasear",
+    "meaning": "caminar por placer o ejercicio (さんぽする)",
+    "ipa": "san-po su-ru"
+  },
+  {
+    "word": "買い物する",
+    "translation": "ir de compras",
+    "meaning": "comprar en tiendas (かいものする)",
+    "ipa": "kai-mo-no su-ru"
+  },
+  {
+    "word": "質問する",
+    "translation": "preguntar",
+    "meaning": "hacer una pregunta formal (しつもんする)",
+    "ipa": "shi-tsu-mon su-ru"
+  },
+  {
+    "word": "約束する",
+    "translation": "prometer",
+    "meaning": "comprometerse a hacer algo (やくそくする)",
+    "ipa": "ya-ku-so-ku su-ru"
+  },
+  {
+    "word": "説明する",
+    "translation": "explicar",
+    "meaning": "aclarar algo para hacerlo comprensible (せつめいする)",
+    "ipa": "se-tsu-mei su-ru"
+  },
+  {
+    "word": "準備する",
+    "translation": "preparar",
+    "meaning": "dejar algo listo con anticipación (じゅんびする)",
+    "ipa": "jun-bi su-ru"
+  },
+  {
+    "word": "結婚する",
+    "translation": "casarse",
+    "meaning": "contraer matrimonio (けっこんする)",
+    "ipa": "ke-kkon su-ru"
+  }
+]

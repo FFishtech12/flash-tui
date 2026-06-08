@@ -1,0 +1,92 @@
+[
+  {
+    "word": "是",
+    "translation": "ser/estar",
+    "meaning": "verbo copulativo de identidad y estado",
+    "ipa": "shì"
+  },
+  {
+    "word": "有",
+    "translation": "tener/haber",
+    "meaning": "poseer algo o existir",
+    "ipa": "yǒu"
+  },
+  {
+    "word": "去",
+    "translation": "ir",
+    "meaning": "desplazarse hacia un lugar",
+    "ipa": "qù"
+  },
+  {
+    "word": "来",
+    "translation": "venir",
+    "meaning": "moverse hacia el hablante",
+    "ipa": "lái"
+  },
+  {
+    "word": "做",
+    "translation": "hacer",
+    "meaning": "realizar, fabricar o ejecutar una acción",
+    "ipa": "zuò"
+  },
+  {
+    "word": "说",
+    "translation": "decir/hablar",
+    "meaning": "expresarse verbalmente",
+    "ipa": "shuō"
+  },
+  {
+    "word": "看",
+    "translation": "ver/mirar/leer",
+    "meaning": "percibir con los ojos o leer",
+    "ipa": "kàn"
+  },
+  {
+    "word": "吃",
+    "translation": "comer",
+    "meaning": "ingerir alimentos sólidos",
+    "ipa": "chī"
+  },
+  {
+    "word": "喝",
+    "translation": "beber",
+    "meaning": "ingerir líquidos",
+    "ipa": "hē"
+  },
+  {
+    "word": "买",
+    "translation": "comprar",
+    "meaning": "adquirir algo con dinero",
+    "ipa": "mǎi"
+  },
+  {
+    "word": "住",
+    "translation": "vivir/residir",
+    "meaning": "tener residencia en un lugar",
+    "ipa": "zhù"
+  },
+  {
+    "word": "学习",
+    "translation": "estudiar/aprender",
+    "meaning": "adquirir conocimientos mediante estudio",
+    "ipa": "xué xí"
+  },
+  {
+    "word": "工作",
+    "translation": "trabajar",
+    "meaning": "realizar una actividad laboral",
+    "ipa": "gōng zuò"
+  },
+  {
+    "word": "喜欢",
+    "translation": "gustar",
+    "meaning": "sentir agrado por algo o alguien",
+    "ipa": "xǐ huān"
+  },
+  {
+    "word": "知道",
+    "translation": "saber/conocer",
+    "meaning": "tener conocimiento de algo",
+    "ipa": "zhī dào"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "word": "sein",
+    "translation": "ser/estar",
+    "meaning": "verbo existencial y de estado (ich bin, du bist, er ist)",
+    "ipa": "zaɪn"
+  },
+  {
+    "word": "haben",
+    "translation": "tener/haber",
+    "meaning": "poseer algo o verbo auxiliar para perfecto",
+    "ipa": "ˈhaːbn̩"
+  },
+  {
+    "word": "werden",
+    "translation": "llegar a ser/convertirse",
+    "meaning": "verbo de cambio de estado o auxiliar de futuro",
+    "ipa": "ˈveːɐdən"
+  },
+  {
+    "word": "können",
+    "translation": "poder/saber",
+    "meaning": "verbo modal que expresa capacidad o permiso",
+    "ipa": "ˈkœnən"
+  },
+  {
+    "word": "müssen",
+    "translation": "tener que/deber",
+    "meaning": "verbo modal que expresa obligación",
+    "ipa": "ˈmʏsn̩"
+  },
+  {
+    "word": "wollen",
+    "translation": "querer",
+    "meaning": "verbo modal que expresa deseo o intención",
+    "ipa": "ˈvɔlən"
+  },
+  {
+    "word": "machen",
+    "translation": "hacer",
+    "meaning": "realizar, fabricar o ejecutar una acción",
+    "ipa": "ˈmaxn̩"
+  },
+  {
+    "word": "gehen",
+    "translation": "ir/caminar",
+    "meaning": "desplazarse a pie de un lugar a otro",
+    "ipa": "ˈɡeːən"
+  },
+  {
+    "word": "kommen",
+    "translation": "venir/llegar",
+    "meaning": "moverse hacia el hablante o llegar a un lugar",
+    "ipa": "ˈkɔmən"
+  },
+  {
+    "word": "sehen",
+    "translation": "ver",
+    "meaning": "percibir con los ojos",
+    "ipa": "ˈzeːən"
+  },
+  {
+    "word": "geben",
+    "translation": "dar",
+    "meaning": "entregar algo a alguien (es gibt = hay)",
+    "ipa": "ˈɡeːbn̩"
+  },
+  {
+    "word": "nehmen",
+    "translation": "tomar/coger",
+    "meaning": "agarrar o aceptar algo",
+    "ipa": "ˈneːmən"
+  },
+  {
+    "word": "sagen",
+    "translation": "decir",
+    "meaning": "expresar algo con palabras",
+    "ipa": "ˈzaːɡn̩"
+  },
+  {
+    "word": "wissen",
+    "translation": "saber",
+    "meaning": "tener conocimiento de hechos o información",
+    "ipa": "ˈvɪsn̩"
+  },
+  {
+    "word": "finden",
+    "translation": "encontrar/opinar",
+    "meaning": "descubrir algo o tener una opinión",
+    "ipa": "ˈfɪndn̩"
+  }
+]

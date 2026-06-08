@@ -1,0 +1,92 @@
+[
+  {
+    "word": "进来",
+    "translation": "entrar (hacia el hablante)",
+    "meaning": "moverse hacia adentro donde está el hablante",
+    "ipa": "jìn lái"
+  },
+  {
+    "word": "进去",
+    "translation": "entrar (alejándose del hablante)",
+    "meaning": "moverse hacia adentro alejándose del hablante",
+    "ipa": "jìn qù"
+  },
+  {
+    "word": "出来",
+    "translation": "salir (hacia el hablante)",
+    "meaning": "moverse hacia afuera donde está el hablante",
+    "ipa": "chū lái"
+  },
+  {
+    "word": "出去",
+    "translation": "salir (alejándose del hablante)",
+    "meaning": "moverse hacia afuera alejándose del hablante",
+    "ipa": "chū qù"
+  },
+  {
+    "word": "上来",
+    "translation": "subir (hacia el hablante)",
+    "meaning": "moverse hacia arriba donde está el hablante",
+    "ipa": "shàng lái"
+  },
+  {
+    "word": "上去",
+    "translation": "subir (alejándose del hablante)",
+    "meaning": "moverse hacia arriba alejándose del hablante",
+    "ipa": "shàng qù"
+  },
+  {
+    "word": "下来",
+    "translation": "bajar (hacia el hablante)",
+    "meaning": "moverse hacia abajo donde está el hablante",
+    "ipa": "xià lái"
+  },
+  {
+    "word": "下去",
+    "translation": "bajar (alejándose del hablante)",
+    "meaning": "moverse hacia abajo alejándose del hablante",
+    "ipa": "xià qù"
+  },
+  {
+    "word": "回来",
+    "translation": "volver/regresar (hacia el hablante)",
+    "meaning": "retornar al lugar donde está el hablante",
+    "ipa": "huí lái"
+  },
+  {
+    "word": "回去",
+    "translation": "volver/regresar (alejándose del hablante)",
+    "meaning": "retornar al lugar original",
+    "ipa": "huí qù"
+  },
+  {
+    "word": "过来",
+    "translation": "venir/acercarse",
+    "meaning": "moverse hacia donde está el hablante",
+    "ipa": "guò lái"
+  },
+  {
+    "word": "过去",
+    "translation": "ir/alejarse",
+    "meaning": "moverse alejándose del hablante",
+    "ipa": "guò qù"
+  },
+  {
+    "word": "起来",
+    "translation": "levantarse/empezar a",
+    "meaning": "ponerse de pie o iniciar una acción",
+    "ipa": "qǐ lái"
+  },
+  {
+    "word": "带走",
+    "translation": "llevarse",
+    "meaning": "tomar algo y alejarse con ello",
+    "ipa": "dài zǒu"
+  },
+  {
+    "word": "想起",
+    "translation": "recordar/venir a la mente",
+    "meaning": "traer algo a la memoria súbitamente",
+    "ipa": "xiǎng qǐ"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "word": "起きる",
+    "translation": "despertarse/levantarse",
+    "meaning": "salir de la cama por la mañana (おきる)",
+    "ipa": "o-ki-ru"
+  },
+  {
+    "word": "働く",
+    "translation": "trabajar",
+    "meaning": "realizar una actividad laboral (はたらく)",
+    "ipa": "ha-ta-ra-ku"
+  },
+  {
+    "word": "休む",
+    "translation": "descansar",
+    "meaning": "tomar un descanso del trabajo (やすむ)",
+    "ipa": "ya-su-mu"
+  },
+  {
+    "word": "洗う",
+    "translation": "lavar",
+    "meaning": "limpiar con agua (あらう)",
+    "ipa": "a-ra-u"
+  },
+  {
+    "word": "待つ",
+    "translation": "esperar",
+    "meaning": "permanecer hasta que algo suceda (まつ)",
+    "ipa": "ma-tsu"
+  },
+  {
+    "word": "使う",
+    "translation": "usar/utilizar",
+    "meaning": "emplear algo para un propósito (つかう)",
+    "ipa": "tsu-ka-u"
+  },
+  {
+    "word": "手伝う",
+    "translation": "ayudar",
+    "meaning": "prestar asistencia a alguien (てつだう)",
+    "ipa": "te-tsu-da-u"
+  },
+  {
+    "word": "習う",
+    "translation": "aprender (de un profesor)",
+    "meaning": "recibir instrucción formal (ならう)",
+    "ipa": "na-ra-u"
+  },
+  {
+    "word": "頼む",
+    "translation": "pedir/solicitar",
+    "meaning": "solicitar un favor o servicio (たのむ)",
+    "ipa": "ta-no-mu"
+  },
+  {
+    "word": "払う",
+    "translation": "pagar",
+    "meaning": "entregar dinero por bienes o servicios (はらう)",
+    "ipa": "ha-ra-u"
+  },
+  {
+    "word": "撮る",
+    "translation": "tomar (foto/video)",
+    "meaning": "capturar imágenes con cámara (とる)",
+    "ipa": "to-ru"
+  },
+  {
+    "word": "置く",
+    "translation": "poner/colocar",
+    "meaning": "ubicar algo en un lugar (おく)",
+    "ipa": "o-ku"
+  },
+  {
+    "word": "選ぶ",
+    "translation": "elegir/seleccionar",
+    "meaning": "escoger entre opciones (えらぶ)",
+    "ipa": "e-ra-bu"
+  },
+  {
+    "word": "住む",
+    "translation": "vivir/residir",
+    "meaning": "tener residencia en un lugar (すむ)",
+    "ipa": "su-mu"
+  },
+  {
+    "word": "引く",
+    "translation": "tirar/jalar",
+    "meaning": "arrastrar algo hacia sí (ひく)",
+    "ipa": "hi-ku"
+  }
+]

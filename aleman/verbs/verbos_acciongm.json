@@ -1,0 +1,92 @@
+[
+  {
+    "word": "essen",
+    "translation": "comer",
+    "meaning": "ingerir alimentos (isst, aß, hat gegessen)",
+    "ipa": "ˈɛsn̩"
+  },
+  {
+    "word": "trinken",
+    "translation": "beber",
+    "meaning": "ingerir líquidos",
+    "ipa": "ˈtʁɪŋkn̩"
+  },
+  {
+    "word": "schlafen",
+    "translation": "dormir",
+    "meaning": "estar en estado de descanso (schläft, schlief, hat geschlafen)",
+    "ipa": "ˈʃlaːfn̩"
+  },
+  {
+    "word": "laufen",
+    "translation": "correr/caminar",
+    "meaning": "moverse a pie rápidamente (läuft, lief, ist gelaufen)",
+    "ipa": "ˈlaʊfn̩"
+  },
+  {
+    "word": "fahren",
+    "translation": "conducir/ir en vehículo",
+    "meaning": "desplazarse en un medio de transporte (fährt, fuhr, ist gefahren)",
+    "ipa": "ˈfaːrən"
+  },
+  {
+    "word": "sprechen",
+    "translation": "hablar",
+    "meaning": "comunicarse verbalmente (spricht, sprach, hat gesprochen)",
+    "ipa": "ˈʃpʁɛçn̩"
+  },
+  {
+    "word": "lesen",
+    "translation": "leer",
+    "meaning": "interpretar texto escrito (liest, las, hat gelesen)",
+    "ipa": "ˈleːzn̩"
+  },
+  {
+    "word": "schreiben",
+    "translation": "escribir",
+    "meaning": "plasmar palabras en papel o digital (schrieb, hat geschrieben)",
+    "ipa": "ˈʃʁaɪbn̩"
+  },
+  {
+    "word": "lernen",
+    "translation": "aprender/estudiar",
+    "meaning": "adquirir conocimientos mediante estudio",
+    "ipa": "ˈlɛʁnən"
+  },
+  {
+    "word": "arbeiten",
+    "translation": "trabajar",
+    "meaning": "realizar una actividad laboral",
+    "ipa": "ˈaʁbaɪtn̩"
+  },
+  {
+    "word": "spielen",
+    "translation": "jugar/tocar",
+    "meaning": "participar en juegos o ejecutar un instrumento",
+    "ipa": "ˈʃpiːlən"
+  },
+  {
+    "word": "kochen",
+    "translation": "cocinar/hervir",
+    "meaning": "preparar alimentos mediante calor",
+    "ipa": "ˈkɔxn̩"
+  },
+  {
+    "word": "kaufen",
+    "translation": "comprar",
+    "meaning": "adquirir algo con dinero",
+    "ipa": "ˈkaʊfn̩"
+  },
+  {
+    "word": "wohnen",
+    "translation": "vivir/residir",
+    "meaning": "tener residencia en un lugar",
+    "ipa": "ˈvoːnən"
+  },
+  {
+    "word": "tanzen",
+    "translation": "bailar",
+    "meaning": "moverse al ritmo de la música",
+    "ipa": "ˈtantsn̩"
+  }
+]

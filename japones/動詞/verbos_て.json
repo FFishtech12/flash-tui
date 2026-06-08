@@ -1,0 +1,92 @@
+[
+  {
+    "word": "作って (作る)",
+    "translation": "haz/haciendo",
+    "meaning": "forma て del verbo hacer (つくって)",
+    "ipa": "tsu-ku-tte"
+  },
+  {
+    "word": "食べて (食べる)",
+    "translation": "come/comiendo",
+    "meaning": "forma て del verbo comer (たべて)",
+    "ipa": "ta-be-te"
+  },
+  {
+    "word": "飲んで (飲む)",
+    "translation": "bebe/bebiendo",
+    "meaning": "forma て del verbo beber (のんで)",
+    "ipa": "non-de"
+  },
+  {
+    "word": "買って (買う)",
+    "translation": "compra/comprando",
+    "meaning": "forma て del verbo comprar (かって)",
+    "ipa": "ka-tte"
+  },
+  {
+    "word": "待って (待つ)",
+    "translation": "espera/esperando",
+    "meaning": "forma て del verbo esperar (まって)",
+    "ipa": "ma-tte"
+  },
+  {
+    "word": "話して (話す)",
+    "translation": "habla/hablando",
+    "meaning": "forma て del verbo hablar (はなして)",
+    "ipa": "ha-na-shi-te"
+  },
+  {
+    "word": "聞いて (聞く)",
+    "translation": "escucha/escuchando",
+    "meaning": "forma て del verbo escuchar (きいて)",
+    "ipa": "ki-i-te"
+  },
+  {
+    "word": "書いて (書く)",
+    "translation": "escribe/escribiendo",
+    "meaning": "forma て del verbo escribir (かいて)",
+    "ipa": "ka-i-te"
+  },
+  {
+    "word": "泳いで (泳ぐ)",
+    "translation": "nada/nadando",
+    "meaning": "forma て del verbo nadar (およいで)",
+    "ipa": "o-yoi-de"
+  },
+  {
+    "word": "読んで (読む)",
+    "translation": "lee/leyendo",
+    "meaning": "forma て del verbo leer (よんで)",
+    "ipa": "yon-de"
+  },
+  {
+    "word": "死んで (死ぬ)",
+    "translation": "muere/muriendo",
+    "meaning": "forma て del verbo morir (しんで)",
+    "ipa": "shin-de"
+  },
+  {
+    "word": "して (する)",
+    "translation": "haz/haciendo",
+    "meaning": "forma て del verbo hacer (irregular)",
+    "ipa": "shi-te"
+  },
+  {
+    "word": "来て (来る)",
+    "translation": "ven/viniendo",
+    "meaning": "forma て del verbo venir - irregular (きて)",
+    "ipa": "ki-te"
+  },
+  {
+    "word": "行って (行く)",
+    "translation": "ve/yendo",
+    "meaning": "forma て del verbo ir - excepción (いって)",
+    "ipa": "i-tte"
+  },
+  {
+    "word": "遊んで (遊ぶ)",
+    "translation": "juega/jugando",
+    "meaning": "forma て del verbo jugar (あそんで)",
+    "ipa": "a-son-de"
+  }
+]

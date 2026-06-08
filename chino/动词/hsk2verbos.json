@@ -1,0 +1,92 @@
+[
+  {
+    "word": "睡觉",
+    "translation": "dormir",
+    "meaning": "estar en estado de descanso",
+    "ipa": "shuì jiào"
+  },
+  {
+    "word": "起床",
+    "translation": "levantarse",
+    "meaning": "salir de la cama por la mañana",
+    "ipa": "qǐ chuáng"
+  },
+  {
+    "word": "跑步",
+    "translation": "correr/trotar",
+    "meaning": "moverse rápidamente a pie",
+    "ipa": "pǎo bù"
+  },
+  {
+    "word": "走路",
+    "translation": "caminar",
+    "meaning": "moverse a pie a paso normal",
+    "ipa": "zǒu lù"
+  },
+  {
+    "word": "游泳",
+    "translation": "nadar",
+    "meaning": "moverse en el agua",
+    "ipa": "yóu yǒng"
+  },
+  {
+    "word": "唱歌",
+    "translation": "cantar",
+    "meaning": "producir sonidos musicales con la voz",
+    "ipa": "chàng gē"
+  },
+  {
+    "word": "跳舞",
+    "translation": "bailar",
+    "meaning": "moverse al ritmo de la música",
+    "ipa": "tiào wǔ"
+  },
+  {
+    "word": "画画",
+    "translation": "dibujar/pintar",
+    "meaning": "crear imágenes con lápiz o pincel",
+    "ipa": "huà huà"
+  },
+  {
+    "word": "做饭",
+    "translation": "cocinar",
+    "meaning": "preparar alimentos",
+    "ipa": "zuò fàn"
+  },
+  {
+    "word": "洗衣服",
+    "translation": "lavar ropa",
+    "meaning": "limpiar la ropa con agua y jabón",
+    "ipa": "xǐ yī fu"
+  },
+  {
+    "word": "打扫",
+    "translation": "limpiar (la casa)",
+    "meaning": "hacer la limpieza del hogar",
+    "ipa": "dǎ sǎo"
+  },
+  {
+    "word": "看电视",
+    "translation": "ver televisión",
+    "meaning": "mirar programas en la TV",
+    "ipa": "kàn diàn shì"
+  },
+  {
+    "word": "听音乐",
+    "translation": "escuchar música",
+    "meaning": "prestar atención a sonidos musicales",
+    "ipa": "tīng yīn yuè"
+  },
+  {
+    "word": "上网",
+    "translation": "navegar por internet",
+    "meaning": "usar internet para buscar información",
+    "ipa": "shàng wǎng"
+  },
+  {
+    "word": "打电话",
+    "translation": "llamar por teléfono",
+    "meaning": "hacer una llamada telefónica",
+    "ipa": "dǎ diàn huà"
+  }
+]

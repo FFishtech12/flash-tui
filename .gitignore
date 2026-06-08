@@ -1,0 +1,8 @@
+target/
+debug/
+release/
+progress_*.json
+.DS_Store
+*.swp
+*.swo
+Cargo.lock

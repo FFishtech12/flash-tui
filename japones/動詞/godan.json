@@ -1,0 +1,92 @@
+[
+  {
+    "word": "会う",
+    "translation": "encontrarse/conocer",
+    "meaning": "reunirse o encontrarse con alguien (あう)",
+    "ipa": "a-u"
+  },
+  {
+    "word": "遊ぶ",
+    "translation": "jugar/divertirse",
+    "meaning": "pasar tiempo de ocio o entretenerse (あそぶ)",
+    "ipa": "a-so-bu"
+  },
+  {
+    "word": "歩く",
+    "translation": "caminar",
+    "meaning": "moverse a pie (あるく)",
+    "ipa": "a-ru-ku"
+  },
+  {
+    "word": "言う",
+    "translation": "decir",
+    "meaning": "expresar algo con palabras (いう)",
+    "ipa": "i-u"
+  },
+  {
+    "word": "行く",
+    "translation": "ir",
+    "meaning": "desplazarse hacia un lugar (いく)",
+    "ipa": "i-ku"
+  },
+  {
+    "word": "歌う",
+    "translation": "cantar",
+    "meaning": "producir sonidos musicales con la voz (うたう)",
+    "ipa": "u-ta-u"
+  },
+  {
+    "word": "売る",
+    "translation": "vender",
+    "meaning": "transferir propiedad por dinero (うる)",
+    "ipa": "u-ru"
+  },
+  {
+    "word": "買う",
+    "translation": "comprar",
+    "meaning": "adquirir algo con dinero (かう)",
+    "ipa": "ka-u"
+  },
+  {
+    "word": "書く",
+    "translation": "escribir",
+    "meaning": "plasmar palabras en papel (かく)",
+    "ipa": "ka-ku"
+  },
+  {
+    "word": "聞く",
+    "translation": "escuchar/preguntar",
+    "meaning": "prestar atención a sonidos o hacer preguntas (きく)",
+    "ipa": "ki-ku"
+  },
+  {
+    "word": "話す",
+    "translation": "hablar",
+    "meaning": "comunicarse verbalmente (はなす)",
+    "ipa": "ha-na-su"
+  },
+  {
+    "word": "読む",
+    "translation": "leer",
+    "meaning": "interpretar texto escrito (よむ)",
+    "ipa": "yo-mu"
+  },
+  {
+    "word": "飲む",
+    "translation": "beber",
+    "meaning": "ingerir líquidos (のむ)",
+    "ipa": "no-mu"
+  },
+  {
+    "word": "作る",
+    "translation": "hacer/fabricar",
+    "meaning": "crear o producir algo (つくる)",
+    "ipa": "tsu-ku-ru"
+  },
+  {
+    "word": "持つ",
+    "translation": "tener/sostener",
+    "meaning": "poseer o sujetar algo (もつ)",
+    "ipa": "mo-tsu"
+  }
+]
