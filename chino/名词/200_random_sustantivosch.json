@@ -1,0 +1,932 @@
+[
+  {
+    "word": "人 (rén)",
+    "translation": "persona",
+    "meaning": "ser humano, individuo",
+    "ipa": "ʐən"
+  },
+  {
+    "word": "水 (shuǐ)",
+    "translation": "agua",
+    "meaning": "líquido esencial para la vida",
+    "ipa": "ʂwei"
+  },
+  {
+    "word": "火 (huǒ)",
+    "translation": "fuego",
+    "meaning": "combustión, llama",
+    "ipa": "xwo"
+  },
+  {
+    "word": "山 (shān)",
+    "translation": "montaña",
+    "meaning": "elevación natural del terreno",
+    "ipa": "ʂan"
+  },
+  {
+    "word": "河 (hé)",
+    "translation": "río",
+    "meaning": "corriente natural de agua",
+    "ipa": "xɤ"
+  },
+  {
+    "word": "天 (tiān)",
+    "translation": "cielo",
+    "meaning": "espacio atmosférico, día",
+    "ipa": "tʰjɛn"
+  },
+  {
+    "word": "地 (dì)",
+    "translation": "tierra",
+    "meaning": "suelo, planeta",
+    "ipa": "ti"
+  },
+  {
+    "word": "日 (rì)",
+    "translation": "sol/día",
+    "meaning": "estrella central, unidad de tiempo",
+    "ipa": "ʐɻ̩"
+  },
+  {
+    "word": "月 (yuè)",
+    "translation": "luna/mes",
+    "meaning": "satélite natural, unidad de tiempo",
+    "ipa": "ɥɛ"
+  },
+  {
+    "word": "星 (xīng)",
+    "translation": "estrella",
+    "meaning": "cuerpo celeste luminoso",
+    "ipa": "ɕiŋ"
+  },
+  {
+    "word": "风 (fēng)",
+    "translation": "viento",
+    "meaning": "movimiento del aire",
+    "ipa": "fəŋ"
+  },
+  {
+    "word": "雨 (yǔ)",
+    "translation": "lluvia",
+    "meaning": "precipitación acuosa",
+    "ipa": "y"
+  },
+  {
+    "word": "雪 (xuě)",
+    "translation": "nieve",
+    "meaning": "precipitación congelada",
+    "ipa": "ɕɥɛ"
+  },
+  {
+    "word": "云 (yún)",
+    "translation": "nube",
+    "meaning": "masa de vapor condensado",
+    "ipa": "yn"
+  },
+  {
+    "word": "树 (shù)",
+    "translation": "árbol",
+    "meaning": "planta leñosa",
+    "ipa": "ʂu"
+  },
+  {
+    "word": "花 (huā)",
+    "translation": "flor",
+    "meaning": "parte reproductiva de la planta",
+    "ipa": "xwa"
+  },
+  {
+    "word": "草 (cǎo)",
+    "translation": "hierba",
+    "meaning": "vegetación baja",
+    "ipa": "tsʰɑʊ"
+  },
+  {
+    "word": "石 (shí)",
+    "translation": "piedra",
+    "meaning": "material rocoso",
+    "ipa": "ʂɻ̩"
+  },
+  {
+    "word": "土 (tǔ)",
+    "translation": "tierra/suelo",
+    "meaning": "material terrestre",
+    "ipa": "tʰu"
+  },
+  {
+    "word": "金 (jīn)",
+    "translation": "oro/metal",
+    "meaning": "metal precioso",
+    "ipa": "tɕin"
+  },
+  {
+    "word": "木 (mù)",
+    "translation": "madera",
+    "meaning": "material de árbol",
+    "ipa": "mu"
+  },
+  {
+    "word": "铁 (tiě)",
+    "translation": "hierro",
+    "meaning": "metal común",
+    "ipa": "tʰjɛ"
+  },
+  {
+    "word": "银 (yín)",
+    "translation": "plata",
+    "meaning": "metal precioso blanco",
+    "ipa": "in"
+  },
+  {
+    "word": "铜 (tóng)",
+    "translation": "cobre",
+    "meaning": "metal rojizo",
+    "ipa": "tʰʊŋ"
+  },
+  {
+    "word": "家 (jiā)",
+    "translation": "casa/hogar",
+    "meaning": "lugar de vivienda",
+    "ipa": "tɕja"
+  },
+  {
+    "word": "门 (mén)",
+    "translation": "puerta",
+    "meaning": "entrada de edificio",
+    "ipa": "mən"
+  },
+  {
+    "word": "窗 (chuāng)",
+    "translation": "ventana",
+    "meaning": "abertura para luz",
+    "ipa": "tʂʰwɑŋ"
+  },
+  {
+    "word": "桌 (zhuō)",
+    "translation": "mesa",
+    "meaning": "mueble con superficie plana",
+    "ipa": "tʂwo"
+  },
+  {
+    "word": "椅 (yǐ)",
+    "translation": "silla",
+    "meaning": "asiento con respaldo",
+    "ipa": "i"
+  },
+  {
+    "word": "床 (chuáng)",
+    "translation": "cama",
+    "meaning": "mueble para dormir",
+    "ipa": "tʂʰwɑŋ"
+  },
+  {
+    "word": "书 (shū)",
+    "translation": "libro",
+    "meaning": "conjunto de páginas escritas",
+    "ipa": "ʂu"
+  },
+  {
+    "word": "笔 (bǐ)",
+    "translation": "bolígrafo/lápiz",
+    "meaning": "instrumento de escritura",
+    "ipa": "pi"
+  },
+  {
+    "word": "纸 (zhǐ)",
+    "translation": "papel",
+    "meaning": "material para escribir",
+    "ipa": "tʂɻ̩"
+  },
+  {
+    "word": "字 (zì)",
+    "translation": "carácter/palabra",
+    "meaning": "unidad escrita",
+    "ipa": "dzɻ̩"
+  },
+  {
+    "word": "画 (huà)",
+    "translation": "dibujo/pintura",
+    "meaning": "representación visual",
+    "ipa": "xwa"
+  },
+  {
+    "word": "电 (diàn)",
+    "translation": "electricidad",
+    "meaning": "energía eléctrica",
+    "ipa": "tjɛn"
+  },
+  {
+    "word": "灯 (dēng)",
+    "translation": "lámpara/luz",
+    "meaning": "fuente de iluminación",
+    "ipa": "təŋ"
+  },
+  {
+    "word": "电话 (diànhuà)",
+    "translation": "teléfono",
+    "meaning": "aparato de comunicación",
+    "ipa": "tjɛn xwa"
+  },
+  {
+    "word": "电脑 (diànnǎo)",
+    "translation": "computadora",
+    "meaning": "ordenador electrónico",
+    "ipa": "tjɛn nɑʊ"
+  },
+  {
+    "word": "手机 (shǒujī)",
+    "translation": "teléfono móvil",
+    "meaning": "dispositivo portátil",
+    "ipa": "ʂoʊ tɕi"
+  },
+  {
+    "word": "车 (chē)",
+    "translation": "coche/vehículo",
+    "meaning": "medio de transporte",
+    "ipa": "tʂʰɤ"
+  },
+  {
+    "word": "飞机 (fēijī)",
+    "translation": "avión",
+    "meaning": "aeronave",
+    "ipa": "feɪ tɕi"
+  },
+  {
+    "word": "火车 (huǒchē)",
+    "translation": "tren",
+    "meaning": "vehículo ferroviario",
+    "ipa": "xwo tʂʰɤ"
+  },
+  {
+    "word": "船 (chuán)",
+    "translation": "barco",
+    "meaning": "embarcación",
+    "ipa": "tʂʰwan"
+  },
+  {
+    "word": "路 (lù)",
+    "translation": "camino/carretera",
+    "meaning": "vía de tránsito",
+    "ipa": "lu"
+  },
+  {
+    "word": "桥 (qiáo)",
+    "translation": "puente",
+    "meaning": "estructura sobre obstáculo",
+    "ipa": "tɕʰjɑʊ"
+  },
+  {
+    "word": "城市 (chéngshì)",
+    "translation": "ciudad",
+    "meaning": "zona urbana",
+    "ipa": "tʂʰəŋ ʂɻ̩"
+  },
+  {
+    "word": "村庄 (cūnzhuāng)",
+    "translation": "pueblo/aldea",
+    "meaning": "zona rural pequeña",
+    "ipa": "tsʰwən tʂwɑŋ"
+  },
+  {
+    "word": "国家 (guójiā)",
+    "translation": "país/nación",
+    "meaning": "entidad política",
+    "ipa": "kwo tɕja"
+  },
+  {
+    "word": "世界 (shìjiè)",
+    "translation": "mundo",
+    "meaning": "planeta Tierra",
+    "ipa": "ʂɻ̩ tjɛ"
+  },
+  {
+    "word": "学校 (xuéxiào)",
+    "translation": "escuela",
+    "meaning": "centro educativo",
+    "ipa": "ɕɥɛ ɕjɑʊ"
+  },
+  {
+    "word": "医院 (yīyuàn)",
+    "translation": "hospital",
+    "meaning": "centro médico",
+    "ipa": "i ɥɛn"
+  },
+  {
+    "word": "商店 (shāngdiàn)",
+    "translation": "tienda",
+    "meaning": "establecimiento comercial",
+    "ipa": "ʂɑŋ tjɛn"
+  },
+  {
+    "word": "市场 (shìchǎng)",
+    "translation": "mercado",
+    "meaning": "lugar de comercio",
+    "ipa": "ʂɻ̩ tʂʰɑŋ"
+  },
+  {
+    "word": "公园 (gōngyuán)",
+    "translation": "parque",
+    "meaning": "área verde pública",
+    "ipa": "kʊŋ ɥɛn"
+  },
+  {
+    "word": "食物 (shíwù)",
+    "translation": "comida",
+    "meaning": "alimento",
+    "ipa": "ʂɻ̩ u"
+  },
+  {
+    "word": "米饭 (mǐfàn)",
+    "translation": "arroz cocido",
+    "meaning": "grano preparado",
+    "ipa": "mi fan"
+  },
+  {
+    "word": "面包 (miànbāo)",
+    "translation": "pan",
+    "meaning": "producto horneado",
+    "ipa": "mjɛn pɑʊ"
+  },
+  {
+    "word": "肉 (ròu)",
+    "translation": "carne",
+    "meaning": "tejido animal comestible",
+    "ipa": "ʐoʊ"
+  },
+  {
+    "word": "鱼 (yú)",
+    "translation": "pescado/pez",
+    "meaning": "animal acuático",
+    "ipa": "y"
+  },
+  {
+    "word": "鸡蛋 (jīdàn)",
+    "translation": "huevo",
+    "meaning": "producto avícola",
+    "ipa": "tɕi tan"
+  },
+  {
+    "word": "牛奶 (niúnǎi)",
+    "translation": "leche",
+    "meaning": "bebida láctea",
+    "ipa": "njoʊ nai"
+  },
+  {
+    "word": "茶 (chá)",
+    "translation": "té",
+    "meaning": "bebida infusionada",
+    "ipa": "tʂʰa"
+  },
+  {
+    "word": "咖啡 (kāfēi)",
+    "translation": "café",
+    "meaning": "bebida estimulante",
+    "ipa": "kʰa feɪ"
+  },
+  {
+    "word": "水果 (shuǐguǒ)",
+    "translation": "fruta",
+    "meaning": "producto vegetal dulce",
+    "ipa": "ʂwei kwo"
+  },
+  {
+    "word": "苹果 (píngguǒ)",
+    "translation": "manzana",
+    "meaning": "fruta redonda",
+    "ipa": "pʰiŋ kwo"
+  },
+  {
+    "word": "香蕉 (xiāngjiāo)",
+    "translation": "plátano/banana",
+    "meaning": "fruta alargada amarilla",
+    "ipa": "ɕjɑŋ tɕjɑʊ"
+  },
+  {
+    "word": "蔬菜 (shūcài)",
+    "translation": "verduras",
+    "meaning": "productos vegetales",
+    "ipa": "ʂu tsʰai"
+  },
+  {
+    "word": "衣服 (yīfu)",
+    "translation": "ropa",
+    "meaning": "prendas de vestir",
+    "ipa": "i fu"
+  },
+  {
+    "word": "裤子 (kùzi)",
+    "translation": "pantalones",
+    "meaning": "prenda inferior",
+    "ipa": "kʰu dzɻ̩"
+  },
+  {
+    "word": "鞋子 (xiézi)",
+    "translation": "zapatos",
+    "meaning": "calzado",
+    "ipa": "ɕjɛ dzɻ̩"
+  },
+  {
+    "word": "帽子 (màozi)",
+    "translation": "sombrero/gorra",
+    "meaning": "prenda para la cabeza",
+    "ipa": "mɑʊ dzɻ̩"
+  },
+  {
+    "word": "时间 (shíjiān)",
+    "translation": "tiempo",
+    "meaning": "duración temporal",
+    "ipa": "ʂɻ̩ tjɛn"
+  },
+  {
+    "word": "今天 (jīntiān)",
+    "translation": "hoy",
+    "meaning": "día presente",
+    "ipa": "tɕin tʰjɛn"
+  },
+  {
+    "word": "明天 (míngtiān)",
+    "translation": "mañana",
+    "meaning": "día siguiente",
+    "ipa": "miŋ tʰjɛn"
+  },
+  {
+    "word": "昨天 (zuótiān)",
+    "translation": "ayer",
+    "meaning": "día anterior",
+    "ipa": "dzwo tʰjɛn"
+  },
+  {
+    "word": "早上 (zǎoshang)",
+    "translation": "mañana (temprano)",
+    "meaning": "período matutino",
+    "ipa": "dzɑʊ ʂɑŋ"
+  },
+  {
+    "word": "中午 (zhōngwǔ)",
+    "translation": "mediodía",
+    "meaning": "mitad del día",
+    "ipa": "tʂʊŋ u"
+  },
+  {
+    "word": "晚上 (wǎnshang)",
+    "translation": "noche/tarde",
+    "meaning": "período vespertino",
+    "ipa": "wan ʂɑŋ"
+  },
+  {
+    "word": "年 (nián)",
+    "translation": "año",
+    "meaning": "unidad de tiempo anual",
+    "ipa": "njɛn"
+  },
+  {
+    "word": "月 (yuè)",
+    "translation": "mes",
+    "meaning": "unidad de tiempo mensual",
+    "ipa": "ɥɛ"
+  },
+  {
+    "word": "星期 (xīngqī)",
+    "translation": "semana",
+    "meaning": "período de siete días",
+    "ipa": "ɕiŋ tɕʰi"
+  },
+  {
+    "word": "小时 (xiǎoshí)",
+    "translation": "hora",
+    "meaning": "unidad de 60 minutos",
+    "ipa": "ɕjɑʊ ʂɻ̩"
+  },
+  {
+    "word": "分钟 (fēnzhōng)",
+    "translation": "minuto",
+    "meaning": "unidad de 60 segundos",
+    "ipa": "fən tʂʊŋ"
+  },
+  {
+    "word": "秒 (miǎo)",
+    "translation": "segundo",
+    "meaning": "unidad básica de tiempo",
+    "ipa": "mjɑʊ"
+  },
+  {
+    "word": "钱 (qián)",
+    "translation": "dinero",
+    "meaning": "medio de intercambio",
+    "ipa": "tɕʰjɛn"
+  },
+  {
+    "word": "工作 (gōngzuò)",
+    "translation": "trabajo",
+    "meaning": "actividad laboral",
+    "ipa": "kʊŋ dzwo"
+  },
+  {
+    "word": "学习 (xuéxí)",
+    "translation": "estudio/aprendizaje",
+    "meaning": "proceso educativo",
+    "ipa": "ɕɥɛ ɕi"
+  },
+  {
+    "word": "朋友 (péngyou)",
+    "translation": "amigo",
+    "meaning": "compañero cercano",
+    "ipa": "pʰəŋ joʊ"
+  },
+  {
+    "word": "家人 (jiārén)",
+    "translation": "familia",
+    "meaning": "parientes cercanos",
+    "ipa": "tɕja ʐən"
+  },
+  {
+    "word": "父亲 (fùqīn)",
+    "translation": "padre",
+    "meaning": "progenitor masculino",
+    "ipa": "fu tɕʰin"
+  },
+  {
+    "word": "母亲 (mǔqīn)",
+    "translation": "madre",
+    "meaning": "progenitora femenina",
+    "ipa": "mu tɕʰin"
+  },
+  {
+    "word": "哥哥 (gēge)",
+    "translation": "hermano mayor",
+    "meaning": "varón de misma generación mayor",
+    "ipa": "kɤ kɤ"
+  },
+  {
+    "word": "姐姐 (jiějie)",
+    "translation": "hermana mayor",
+    "meaning": "mujer de misma generación mayor",
+    "ipa": "tɕjɛ tɕjɛ"
+  },
+  {
+    "word": "弟弟 (dìdi)",
+    "translation": "hermano menor",
+    "meaning": "varón de misma generación menor",
+    "ipa": "ti ti"
+  },
+  {
+    "word": "妹妹 (mèimei)",
+    "translation": "hermana menor",
+    "meaning": "mujer de misma generación menor",
+    "ipa": "meɪ meɪ"
+  },
+  {
+    "word": "孩子 (háizi)",
+    "translation": "niño/hijo",
+    "meaning": "persona joven",
+    "ipa": "xai dzɻ̩"
+  },
+  {
+    "word": "学生 (xuésheng)",
+    "translation": "estudiante",
+    "meaning": "persona que estudia",
+    "ipa": "ɕɥɛ ʂəŋ"
+  },
+  {
+    "word": "老师 (lǎoshī)",
+    "translation": "profesor/maestro",
+    "meaning": "educador",
+    "ipa": "lɑʊ ʂɻ̩"
+  },
+  {
+    "word": "医生 (yīshēng)",
+    "translation": "médico/doctor",
+    "meaning": "profesional de salud",
+    "ipa": "i ʂəŋ"
+  },
+  {
+    "word": "工人 (gōngrén)",
+    "translation": "obrero/trabajador",
+    "meaning": "trabajador manual",
+    "ipa": "kʊŋ ʐən"
+  },
+  {
+    "word": "农民 (nóngmín)",
+    "translation": "campesino/agricultor",
+    "meaning": "trabajador agrícola",
+    "ipa": "nʊŋ min"
+  },
+  {
+    "word": "警察 (jǐngchá)",
+    "translation": "policía",
+    "meaning": "agente de seguridad",
+    "ipa": "tɕiŋ tʂʰa"
+  },
+  {
+    "word": "问题 (wèntí)",
+    "translation": "pregunta/problema",
+    "meaning": "cuestión o dificultad",
+    "ipa": "wən tʰi"
+  },
+  {
+    "word": "答案 (dá'àn)",
+    "translation": "respuesta",
+    "meaning": "solución a pregunta",
+    "ipa": "ta an"
+  },
+  {
+    "word": "事情 (shìqing)",
+    "translation": "asunto/cosa",
+    "meaning": "evento o materia",
+    "ipa": "ʂɻ̩ tɕʰiŋ"
+  },
+  {
+    "word": "东西 (dōngxi)",
+    "translation": "cosa/objeto",
+    "meaning": "artículo material",
+    "ipa": "tʊŋ ɕi"
+  },
+  {
+    "word": "颜色 (yánsè)",
+    "translation": "color",
+    "meaning": "tonalidad visual",
+    "ipa": "jɛn sɤ"
+  },
+  {
+    "word": "红色 (hóngsè)",
+    "translation": "rojo",
+    "meaning": "color primario cálido",
+    "ipa": "xʊŋ sɤ"
+  },
+  {
+    "word": "蓝色 (lánsè)",
+    "translation": "azul",
+    "meaning": "color del cielo",
+    "ipa": "lan sɤ"
+  },
+  {
+    "word": "绿色 (lǜsè)",
+    "translation": "verde",
+    "meaning": "color de la naturaleza",
+    "ipa": "ly sɤ"
+  },
+  {
+    "word": "黄色 (huángsè)",
+    "translation": "amarillo",
+    "meaning": "color del sol",
+    "ipa": "xwɑŋ sɤ"
+  },
+  {
+    "word": "白色 (báisè)",
+    "translation": "blanco",
+    "meaning": "color claro puro",
+    "ipa": "pai sɤ"
+  },
+  {
+    "word": "黑色 (hēisè)",
+    "translation": "negro",
+    "meaning": "color oscuro",
+    "ipa": "xeɪ sɤ"
+  },
+  {
+    "word": "大 (dà)",
+    "translation": "grande",
+    "meaning": "de tamaño considerable",
+    "ipa": "ta"
+  },
+  {
+    "word": "小 (xiǎo)",
+    "translation": "pequeño",
+    "meaning": "de tamaño reducido",
+    "ipa": "ɕjɑʊ"
+  },
+  {
+    "word": "多 (duō)",
+    "translation": "mucho",
+    "meaning": "en gran cantidad",
+    "ipa": "tuo"
+  },
+  {
+    "word": "少 (shǎo)",
+    "translation": "poco",
+    "meaning": "en pequeña cantidad",
+    "ipa": "ʂɑʊ"
+  },
+  {
+    "word": "长 (cháng)",
+    "translation": "largo",
+    "meaning": "de gran longitud",
+    "ipa": "tʂʰɑŋ"
+  },
+  {
+    "word": "短 (duǎn)",
+    "translation": "corto",
+    "meaning": "de poca longitud",
+    "ipa": "twan"
+  },
+  {
+    "word": "高 (gāo)",
+    "translation": "alto",
+    "meaning": "de gran altura",
+    "ipa": "kɑʊ"
+  },
+  {
+    "word": "低 (dī)",
+    "translation": "bajo",
+    "meaning": "de poca altura",
+    "ipa": "ti"
+  },
+  {
+    "word": "好 (hǎo)",
+    "translation": "bueno",
+    "meaning": "de calidad positiva",
+    "ipa": "xɑʊ"
+  },
+  {
+    "word": "坏 (huài)",
+    "translation": "malo",
+    "meaning": "de calidad negativa",
+    "ipa": "xwai"
+  },
+  {
+    "word": "新 (xīn)",
+    "translation": "nuevo",
+    "meaning": "reciente, no usado",
+    "ipa": "ɕin"
+  },
+  {
+    "word": "旧 (jiù)",
+    "translation": "viejo/antiguo",
+    "meaning": "usado, antiguo",
+    "ipa": "tɕjoʊ"
+  },
+  {
+    "word": "快乐 (kuàilè)",
+    "translation": "felicidad/alegría",
+    "meaning": "estado emocional positivo",
+    "ipa": "kʰwai lɤ"
+  },
+  {
+    "word": "悲伤 (bēishāng)",
+    "translation": "tristeza",
+    "meaning": "estado emocional negativo",
+    "ipa": "peɪ ʂɑŋ"
+  },
+  {
+    "word": "爱 (ài)",
+    "translation": "amor",
+    "meaning": "sentimiento afectuoso",
+    "ipa": "ai"
+  },
+  {
+    "word": "恨 (hèn)",
+    "translation": "odio",
+    "meaning": "sentimiento negativo intenso",
+    "ipa": "xən"
+  },
+  {
+    "word": "希望 (xīwàng)",
+    "translation": "esperanza",
+    "meaning": "deseo de algo futuro",
+    "ipa": "ɕi wɑŋ"
+  },
+  {
+    "word": "梦想 (mèngxiǎng)",
+    "translation": "sueño/aspiración",
+    "meaning": "meta deseada",
+    "ipa": "məŋ ɕjɑŋ"
+  },
+  {
+    "word": "音乐 (yīnyuè)",
+    "translation": "música",
+    "meaning": "arte sonoro",
+    "ipa": "in ɥɛ"
+  },
+  {
+    "word": "电影 (diànyǐng)",
+    "translation": "película/cine",
+    "meaning": "obra cinematográfica",
+    "ipa": "tjɛn jiŋ"
+  },
+  {
+    "word": "游戏 (yóuxì)",
+    "translation": "juego",
+    "meaning": "actividad recreativa",
+    "ipa": "joʊ ɕi"
+  },
+  {
+    "word": "运动 (yùndòng)",
+    "translation": "deporte/ejercicio",
+    "meaning": "actividad física",
+    "ipa": "yn tʊŋ"
+  },
+  {
+    "word": "足球 (zúqiú)",
+    "translation": "fútbol",
+    "meaning": "deporte de pelota",
+    "ipa": "dzu tɕʰjoʊ"
+  },
+  {
+    "word": "篮球 (lánqiú)",
+    "translation": "baloncesto",
+    "meaning": "deporte con canasta",
+    "ipa": "lan tɕʰjoʊ"
+  },
+  {
+    "word": "游泳 (yóuyǒng)",
+    "translation": "natación",
+    "meaning": "deporte acuático",
+    "ipa": "joʊ jʊŋ"
+  },
+  {
+    "word": "跑步 (pǎobù)",
+    "translation": "correr",
+    "meaning": "actividad de carrera",
+    "ipa": "pʰɑʊ pu"
+  },
+  {
+    "word": "旅行 (lǚxíng)",
+    "translation": "viaje",
+    "meaning": "desplazamiento turístico",
+    "ipa": "ly ɕiŋ"
+  },
+  {
+    "word": "照片 (zhàopiàn)",
+    "translation": "foto/fotografía",
+    "meaning": "imagen capturada",
+    "ipa": "tʂɑʊ pʰjɛn"
+  },
+  {
+    "word": "新闻 (xīnwén)",
+    "translation": "noticias",
+    "meaning": "información actual",
+    "ipa": "ɕin wən"
+  },
+  {
+    "word": "故事 (gùshi)",
+    "translation": "historia/cuento",
+    "meaning": "relato narrativo",
+    "ipa": "ku ʂɻ̩"
+  },
+  {
+    "word": "文化 (wénhuà)",
+    "translation": "cultura",
+    "meaning": "conjunto de tradiciones",
+    "ipa": "wən xwa"
+  },
+  {
+    "word": "历史 (lìshǐ)",
+    "translation": "historia",
+    "meaning": "registro del pasado",
+    "ipa": "li ʂɻ̩"
+  },
+  {
+    "word": "科学 (kēxué)",
+    "translation": "ciencia",
+    "meaning": "conocimiento sistemático",
+    "ipa": "kʰɤ ɕɥɛ"
+  },
+  {
+    "word": "技术 (jìshù)",
+    "translation": "tecnología/técnica",
+    "meaning": "aplicación práctica",
+    "ipa": "tɕi ʂu"
+  },
+  {
+    "word": "艺术 (yìshù)",
+    "translation": "arte",
+    "meaning": "expresión creativa",
+    "ipa": "i ʂu"
+  },
+  {
+    "word": "语言 (yǔyán)",
+    "translation": "lenguaje/idioma",
+    "meaning": "sistema de comunicación",
+    "ipa": "y jɛn"
+  },
+  {
+    "word": "中文 (Zhōngwén)",
+    "translation": "chino mandarín",
+    "meaning": "idioma chino",
+    "ipa": "tʂʊŋ wən"
+  },
+  {
+    "word": "英语 (Yīngyǔ)",
+    "translation": "inglés",
+    "meaning": "idioma inglés",
+    "ipa": "iŋ y"
+  },
+  {
+    "word": "日本 (Rìběn)",
+    "translation": "Japón",
+    "meaning": "país asiático",
+    "ipa": "ʐɻ̩ pən"
+  },
+  {
+    "word": "美国 (Měiguó)",
+    "translation": "Estados Unidos",
+    "meaning": "país norteamericano",
+    "ipa": "meɪ kwo"
+  },
+  {
+    "word": "中国 (Zhōngguó)",
+    "translation": "China",
+    "meaning": "país asiático",
+    "ipa": "tʂʊŋ kwo"
+  }
+]
