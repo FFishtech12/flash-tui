@@ -21,7 +21,7 @@ use std::io;
 use std::path::{Path, PathBuf};
 
 // ---------------- Modelo de datos ----------------
-#[derive(Debug, Clone, Deserialize)]
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct RawCard {
     pub word: String,
     pub translation: String,
@@ -154,7 +154,7 @@ pub fn sm2_update(progress: &mut Progress, quality: u8, today: NaiveDate) {
     progress.next_review = today + Duration::days(progress.interval as i64);
 }
 
-// ---------------- Carga de tarjetas (CON SOPORTE PARA SUBCARPETAS) ----------------
+// ---------------- Carga de tarjetas ----------------
 pub fn load_cards(base_dir: &Path) -> Vec<Card> {
     let mut cards = Vec::new();
     if let Ok(entries) = fs::read_dir(base_dir) {
@@ -205,6 +205,48 @@ fn load_json_files(dir: &Path, language: &str, parent_group: &str, cards: &mut V
     }
 }
 
+// ---------------- Funciones para gestionar tarjetas ----------------
+fn save_card_to_json(base_dir: &Path, language: &str, group: &str, card: &RawCard) -> Result<(), String> {
+    let file_path = base_dir.join(language).join(format!("{}.json", group));
+    
+    let mut cards: Vec<RawCard> = if file_path.exists() {
+        let content = fs::read_to_string(&file_path).map_err(|e| e.to_string())?;
+        serde_json::from_str(&content).unwrap_or_default()
+    } else {
+        Vec::new()
+    };
+    
+    cards.push(card.clone());
+    
+    let json = serde_json::to_string_pretty(&cards).map_err(|e| e.to_string())?;
+    fs::write(&file_path, json).map_err(|e| e.to_string())?;
+    
+    Ok(())
+}
+
+fn delete_card_from_json(base_dir: &Path, language: &str, group: &str, word: &str) -> Result<(), String> {
+    let file_path = base_dir.join(language).join(format!("{}.json", group));
+    
+    if !file_path.exists() {
+        return Err("Archivo no encontrado".to_string());
+    }
+    
+    let content = fs::read_to_string(&file_path).map_err(|e| e.to_string())?;
+    let mut cards: Vec<RawCard> = serde_json::from_str(&content).unwrap_or_default();
+    
+    let before = cards.len();
+    cards.retain(|c| c.word != word);
+    
+    if cards.len() == before {
+        return Err("Tarjeta no encontrada".to_string());
+    }
+    
+    let json = serde_json::to_string_pretty(&cards).map_err(|e| e.to_string())?;
+    fs::write(&file_path, json).map_err(|e| e.to_string())?;
+    
+    Ok(())
+}
+
 // ---------------- Estados de la UI ----------------
 enum AppState {
     LanguageSelect,
@@ -227,6 +269,33 @@ enum AppState {
         average_quality: f64,
         language: String,
         cram: bool,
+    },
+    ManageCards {
+        language: String,
+        groups: Vec<String>,
+    },
+    ViewCards {
+        language: String,
+        group: String,
+        cards: Vec<Card>,
+    },
+    AddCard {
+        language: String,
+        group: String,
+        word: String,
+        translation: String,
+        meaning: String,
+        ipa: String,
+        field_index: usize,
+    },
+    NewGroup {
+        language: String,
+        group_name: String,
+    },
+    SelectGroupForAction {
+        language: String,
+        groups: Vec<String>,
+        action: String,
     },
     Quit,
 }
@@ -344,8 +413,10 @@ fn ui(
                     Span::styled(" ↑↓ ", Style::default().fg(Color::Yellow).add_modifier(Modifier::BOLD)),
                     Span::raw("Navegar  "),
                     Span::styled(" Enter ", Style::default().fg(Color::Green).add_modifier(Modifier::BOLD)),
-                    Span::raw("Seleccionar  "),
-                    Span::styled(" Q/Esc ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
+                    Span::raw("Estudiar  "),
+                    Span::styled(" M ", Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD)),
+                    Span::raw("Gestionar  "),
+                    Span::styled(" Q ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
                     Span::raw("Salir"),
                 ]),
             ];
@@ -383,9 +454,7 @@ fn ui(
                     Span::styled(" C ", Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD)),
                     Span::raw("Cram  "),
                     Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
-                    Span::raw("Volver  "),
-                    Span::styled(" Q ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
-                    Span::raw("Salir"),
+                    Span::raw("Volver"),
                 ]),
             ];
             let hud = Paragraph::new(hud_text)
@@ -411,14 +480,13 @@ fn ui(
                 let hud_text = vec![
                     Line::from(vec![
                         Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
-                        Span::raw("Volver a idiomas  "),
+                        Span::raw("Volver  "),
                         Span::styled(" Q ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
                         Span::raw("Salir"),
                     ]),
                 ];
                 let hud = Paragraph::new(hud_text)
-                    .block(Block::default().borders(Borders::ALL))
-                    .style(Style::default().fg(Color::White));
+                    .block(Block::default().borders(Borders::ALL));
                 f.render_widget(hud, hud_area);
                 return;
             }
@@ -485,9 +553,7 @@ fn ui(
                         Span::styled(" B ", Style::default().fg(Color::Yellow).add_modifier(Modifier::BOLD)),
                         Span::raw("Atrás  "),
                         Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
-                        Span::raw("Volver  "),
-                        Span::styled(" Q ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
-                        Span::raw("Salir"),
+                        Span::raw("Volver"),
                     ]),
                 ]
             } else {
@@ -498,15 +564,12 @@ fn ui(
                         Span::styled(" B ", Style::default().fg(Color::Yellow).add_modifier(Modifier::BOLD)),
                         Span::raw("Atrás  "),
                         Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
-                        Span::raw("Volver  "),
-                        Span::styled(" Q ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
-                        Span::raw("Salir"),
+                        Span::raw("Volver"),
                     ]),
                 ]
             };
             let hud = Paragraph::new(hud_text)
-                .block(Block::default().borders(Borders::ALL))
-                .style(Style::default().fg(Color::White));
+                .block(Block::default().borders(Borders::ALL));
             f.render_widget(hud, hud_area);
         }
         
@@ -550,14 +613,148 @@ fn ui(
             let hud_text = vec![
                 Line::from(vec![
                     Span::styled(" Cualquier tecla ", Style::default().fg(Color::Green).add_modifier(Modifier::BOLD)),
-                    Span::raw("Volver al menú  "),
-                    Span::styled(" Q ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
-                    Span::raw("Salir"),
+                    Span::raw("Volver al menú"),
                 ]),
             ];
             let hud = Paragraph::new(hud_text)
-                .block(Block::default().borders(Borders::ALL))
-                .style(Style::default().fg(Color::White));
+                .block(Block::default().borders(Borders::ALL));
+            f.render_widget(hud, hud_area);
+        }
+        
+        AppState::ManageCards { language, groups: _ } => {
+            let title = format!("📋 Gestionar {} - Tarjetas", language);
+            
+            let actions = vec![
+                "👁  Ver tarjetas (V)",
+                "➕ Añadir tarjeta (A)",
+                "📁 Nuevo grupo (N)",
+                "⬅  Volver (Esc)",
+            ];
+            
+            let items: Vec<ListItem> = actions.iter().map(|a| ListItem::new(*a)).collect();
+            let list = List::new(items)
+                .block(Block::default().title(title).borders(Borders::ALL))
+                .highlight_style(Style::default().bg(Color::DarkGray));
+            
+            f.render_stateful_widget(list, main_area, list_state);
+            
+            let hud_text = vec![
+                Line::from(vec![
+                    Span::styled(" V ", Style::default().fg(Color::Green).add_modifier(Modifier::BOLD)),
+                    Span::raw("Ver  "),
+                    Span::styled(" A ", Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD)),
+                    Span::raw("Añadir  "),
+                    Span::styled(" N ", Style::default().fg(Color::Yellow).add_modifier(Modifier::BOLD)),
+                    Span::raw("Nuevo grupo  "),
+                    Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
+                    Span::raw("Volver"),
+                ]),
+            ];
+            let hud = Paragraph::new(hud_text)
+                .block(Block::default().borders(Borders::ALL));
+            f.render_widget(hud, hud_area);
+        }
+        
+        AppState::SelectGroupForAction { language, groups, action } => {
+            let title = format!("📋 {} - Selecciona grupo para {}", language, 
+                if action == "view" { "ver" } else { "añadir" });
+            
+            let items: Vec<ListItem> = groups.iter().map(|g| ListItem::new(g.as_str())).collect();
+            let list = List::new(items)
+                .block(Block::default().title(title).borders(Borders::ALL))
+                .highlight_style(Style::default().bg(Color::DarkGray));
+            
+            f.render_stateful_widget(list, main_area, list_state);
+            
+            let hud_text = vec![
+                Line::from(vec![
+                    Span::styled(" Enter ", Style::default().fg(Color::Green).add_modifier(Modifier::BOLD)),
+                    Span::raw("Seleccionar  "),
+                    Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
+                    Span::raw("Volver"),
+                ]),
+            ];
+            let hud = Paragraph::new(hud_text)
+                .block(Block::default().borders(Borders::ALL));
+            f.render_widget(hud, hud_area);
+        }
+        
+        AppState::ViewCards { language, group, cards } => {
+            let title = format!("📋 {}/{} - {} tarjetas", language, group, cards.len());
+            
+            let items: Vec<ListItem> = cards.iter().enumerate().map(|(i, card)| {
+                ListItem::new(format!("{}. {} → {}", i + 1, card.raw.word, card.raw.translation))
+            }).collect();
+            
+            let list = List::new(items)
+                .block(Block::default().title(title).borders(Borders::ALL))
+                .highlight_style(Style::default().bg(Color::DarkGray));
+            
+            f.render_stateful_widget(list, main_area, list_state);
+            
+            let hud_text = vec![
+                Line::from(vec![
+                    Span::styled(" ↑↓ ", Style::default().fg(Color::Yellow).add_modifier(Modifier::BOLD)),
+                    Span::raw("Navegar  "),
+                    Span::styled(" D ", Style::default().fg(Color::Red).add_modifier(Modifier::BOLD)),
+                    Span::raw("Eliminar  "),
+                    Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
+                    Span::raw("Volver"),
+                ]),
+            ];
+            let hud = Paragraph::new(hud_text)
+                .block(Block::default().borders(Borders::ALL));
+            f.render_widget(hud, hud_area);
+        }
+        
+        AppState::AddCard { language, group, word, translation, meaning, ipa, field_index } => {
+            let title = format!("➕ Añadir tarjeta a {}/{}", language, group);
+            
+            let fields = vec![
+                if *field_index == 0 { format!("▶ Palabra:     {}", word) } else { format!("  Palabra:     {}", word) },
+                if *field_index == 1 { format!("▶ Traducción:  {}", translation) } else { format!("  Traducción:  {}", translation) },
+                if *field_index == 2 { format!("▶ Significado: {}", meaning) } else { format!("  Significado: {}", meaning) },
+                if *field_index == 3 { format!("▶ IPA:         {}", ipa) } else { format!("  IPA:         {}", ipa) },
+            ];
+            
+            let text = fields.join("\n\n");
+            let p = Paragraph::new(text)
+                .block(Block::default().title(title).borders(Borders::ALL));
+            f.render_widget(p, main_area);
+            
+            let hud_text = vec![
+                Line::from(vec![
+                    Span::styled(" Tab ", Style::default().fg(Color::Yellow).add_modifier(Modifier::BOLD)),
+                    Span::raw("Siguiente campo  "),
+                    Span::styled(" Enter ", Style::default().fg(Color::Green).add_modifier(Modifier::BOLD)),
+                    Span::raw("Guardar  "),
+                    Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
+                    Span::raw("Cancelar"),
+                ]),
+            ];
+            let hud = Paragraph::new(hud_text)
+                .block(Block::default().borders(Borders::ALL));
+            f.render_widget(hud, hud_area);
+        }
+        
+        AppState::NewGroup { language, group_name } => {
+            let title = format!("📁 Nuevo grupo en {}", language);
+            
+            let text = format!("Nombre del grupo: {}\n\n(Enter para crear, Esc para cancelar)", group_name);
+            let p = Paragraph::new(text)
+                .block(Block::default().title(title).borders(Borders::ALL));
+            f.render_widget(p, main_area);
+            
+            let hud_text = vec![
+                Line::from(vec![
+                    Span::styled(" Enter ", Style::default().fg(Color::Green).add_modifier(Modifier::BOLD)),
+                    Span::raw("Crear  "),
+                    Span::styled(" Esc ", Style::default().fg(Color::Magenta).add_modifier(Modifier::BOLD)),
+                    Span::raw("Cancelar"),
+                ]),
+            ];
+            let hud = Paragraph::new(hud_text)
+                .block(Block::default().borders(Borders::ALL));
             f.render_widget(hud, hud_area);
         }
         
@@ -574,7 +771,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut terminal = Terminal::new(backend)?;
 
     let base_dir = std::env::current_dir()?;
-    let all_cards = load_cards(&base_dir);
+    let mut all_cards = load_cards(&base_dir);
     let mut progress_store = ProgressStore::new();
     let today = Local::now().date_naive();
 
@@ -603,9 +800,11 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         })?;
 
         if let Event::Key(key) = event::read()? {
-            if key.code == KeyCode::Char('q') {
-                app_state = AppState::Quit;
-                break;
+            match key.code {
+                KeyCode::Char('q') => {
+                    break;
+                }
+                _ => {}
             }
 
             match &mut app_state {
@@ -613,10 +812,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 
                 AppState::LanguageSelect => {
                     match key.code {
-                        KeyCode::Esc => {
-                            app_state = AppState::Quit;
-                            break;
-                        }
+                        KeyCode::Esc => break,
                         KeyCode::Enter => {
                             if let Some(i) = list_state.selected() {
                                 if i < languages.len() {
@@ -637,6 +833,16 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     };
                                     list_state.select(Some(0));
                                 }
+                            }
+                        }
+                        KeyCode::Char('m') | KeyCode::Char('M') => {
+                            if let Some(i) = list_state.selected() {
+                                let language = languages[i].clone();
+                                app_state = AppState::ManageCards {
+                                    language,
+                                    groups: vec![],
+                                };
+                                list_state.select(Some(0));
                             }
                         }
                         KeyCode::Up => {
@@ -682,7 +888,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                 }
                             }
                         }
-                        KeyCode::Char('c') => {
+                        KeyCode::Char('c') | KeyCode::Char('C') => {
                             if let Some(i) = list_state.selected() {
                                 if i < groups.len() {
                                     let selected = groups[i].clone();
@@ -708,6 +914,256 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     list_state.select(Some(sel + 1));
                                 }
                             }
+                        }
+                        _ => {}
+                    }
+                }
+                
+                AppState::ManageCards { language, groups: _ } => {
+                    match key.code {
+                        KeyCode::Esc => {
+                            app_state = AppState::LanguageSelect;
+                            list_state.select(Some(0));
+                        }
+                        KeyCode::Char('v') | KeyCode::Char('V') => {
+                            let mut groups: Vec<String> = all_cards
+                                .iter()
+                                .filter(|c| c.language == *language)
+                                .map(|c| c.group.clone())
+                                .collect::<HashSet<_>>()
+                                .into_iter()
+                                .collect();
+                            groups.sort();
+                            app_state = AppState::SelectGroupForAction {
+                                language: language.clone(),
+                                groups,
+                                action: "view".to_string(),
+                            };
+                            list_state.select(Some(0));
+                        }
+                        KeyCode::Char('a') | KeyCode::Char('A') => {
+                            let mut groups: Vec<String> = all_cards
+                                .iter()
+                                .filter(|c| c.language == *language)
+                                .map(|c| c.group.clone())
+                                .collect::<HashSet<_>>()
+                                .into_iter()
+                                .collect();
+                            groups.sort();
+                            if groups.is_empty() {
+                                app_state = AppState::NewGroup {
+                                    language: language.clone(),
+                                    group_name: String::new(),
+                                };
+                            } else {
+                                app_state = AppState::SelectGroupForAction {
+                                    language: language.clone(),
+                                    groups,
+                                    action: "add".to_string(),
+                                };
+                                list_state.select(Some(0));
+                            }
+                        }
+                        KeyCode::Char('n') | KeyCode::Char('N') => {
+                            app_state = AppState::NewGroup {
+                                language: language.clone(),
+                                group_name: String::new(),
+                            };
+                        }
+                        _ => {}
+                    }
+                }
+                
+                AppState::SelectGroupForAction { language, groups, action } => {
+                    match key.code {
+                        KeyCode::Esc => {
+                            app_state = AppState::ManageCards {
+                                language: language.clone(),
+                                groups: vec![],
+                            };
+                        }
+                        KeyCode::Enter => {
+                            if let Some(i) = list_state.selected() {
+                                if i < groups.len() {
+                                    let group = groups[i].clone();
+                                    if action == "view" {
+                                        let cards: Vec<Card> = all_cards
+                                            .iter()
+                                            .filter(|c| c.language == *language && c.group == group)
+                                            .cloned()
+                                            .collect();
+                                        app_state = AppState::ViewCards {
+                                            language: language.clone(),
+                                            group,
+                                            cards,
+                                        };
+                                    } else {
+                                        app_state = AppState::AddCard {
+                                            language: language.clone(),
+                                            group,
+                                            word: String::new(),
+                                            translation: String::new(),
+                                            meaning: String::new(),
+                                            ipa: String::new(),
+                                            field_index: 0,
+                                        };
+                                    }
+                                }
+                            }
+                        }
+                        KeyCode::Up => {
+                            if let Some(sel) = list_state.selected() {
+                                if sel > 0 {
+                                    list_state.select(Some(sel - 1));
+                                }
+                            }
+                        }
+                        KeyCode::Down => {
+                            if let Some(sel) = list_state.selected() {
+                                if sel + 1 < groups.len() {
+                                    list_state.select(Some(sel + 1));
+                                }
+                            }
+                        }
+                        _ => {}
+                    }
+                }
+                
+                AppState::ViewCards { language, group, .. } => {
+                    match key.code {
+                        KeyCode::Esc => {
+                            app_state = AppState::ManageCards {
+                                language: language.clone(),
+                                groups: vec![],
+                            };
+                        }
+                        KeyCode::Char('d') | KeyCode::Char('D') => {
+                            if let Some(selected) = list_state.selected() {
+                                // Obtener las cartas actuales
+                                let cards: Vec<Card> = all_cards
+                                    .iter()
+                                    .filter(|c| c.language == *language && c.group == *group)
+                                    .cloned()
+                                    .collect();
+                                if selected < cards.len() {
+                                    let card = &cards[selected];
+                                    delete_card_from_json(&base_dir, language, group, &card.raw.word).ok();
+                                    // Recargar tarjetas
+                                    all_cards = load_cards(&base_dir);
+                                    let updated_cards: Vec<Card> = all_cards
+                                        .iter()
+                                        .filter(|c| c.language == *language && c.group == *group)
+                                        .cloned()
+                                        .collect();
+                                    let new_len = updated_cards.len();
+                                    app_state = AppState::ViewCards {
+                                        language: language.clone(),
+                                        group: group.clone(),
+                                        cards: updated_cards,
+                                    };
+                                    // Ajustar selección
+                                    if selected >= new_len {
+                                        list_state.select(if new_len > 0 { Some(new_len - 1) } else { None });
+                                    }
+                                }
+                            }
+                        }
+                        KeyCode::Up => {
+                            if let Some(sel) = list_state.selected() {
+                                if sel > 0 {
+                                    list_state.select(Some(sel - 1));
+                                }
+                            }
+                        }
+                        KeyCode::Down => {
+                            // Contar cartas actuales
+                            let count = all_cards
+                                .iter()
+                                .filter(|c| c.language == *language && c.group == *group)
+                                .count();
+                            if let Some(sel) = list_state.selected() {
+                                if sel + 1 < count {
+                                    list_state.select(Some(sel + 1));
+                                }
+                            }
+                        }
+                        _ => {}
+                    }
+                }
+                
+                AppState::AddCard { language, group, word, translation, meaning, ipa, field_index } => {
+                    match key.code {
+                        KeyCode::Esc => {
+                            app_state = AppState::ManageCards {
+                                language: language.clone(),
+                                groups: vec![],
+                            };
+                        }
+                        KeyCode::Tab => {
+                            *field_index = (*field_index + 1) % 4;
+                        }
+                        KeyCode::Backspace => {
+                            match *field_index {
+                                0 => { word.pop(); }
+                                1 => { translation.pop(); }
+                                2 => { meaning.pop(); }
+                                3 => { ipa.pop(); }
+                                _ => {}
+                            }
+                        }
+                        KeyCode::Enter => {
+                            if !word.is_empty() && !translation.is_empty() {
+                                let card = RawCard {
+                                    word: word.clone(),
+                                    translation: translation.clone(),
+                                    meaning: meaning.clone(),
+                                    ipa: ipa.clone(),
+                                };
+                                if save_card_to_json(&base_dir, language, group, &card).is_ok() {
+                                    // Recargar todas las tarjetas
+                                    all_cards = load_cards(&base_dir);
+                                    app_state = AppState::LanguageSelect;
+                                    list_state.select(Some(0));
+                                }
+                            }
+                        }
+                        KeyCode::Char(c) => {
+                            match *field_index {
+                                0 => word.push(c),
+                                1 => translation.push(c),
+                                2 => meaning.push(c),
+                                3 => ipa.push(c),
+                                _ => {}
+                            }
+                        }
+                        _ => {}
+                    }
+                }
+                
+                AppState::NewGroup { language, group_name } => {
+                    match key.code {
+                        KeyCode::Esc => {
+                            app_state = AppState::ManageCards {
+                                language: language.clone(),
+                                groups: vec![],
+                            };
+                        }
+                        KeyCode::Enter => {
+                            if !group_name.is_empty() {
+                                let file_path = base_dir.join(language).join(format!("{}.json", group_name));
+                                if !file_path.exists() {
+                                    fs::write(&file_path, "[]").ok();
+                                    all_cards = load_cards(&base_dir);
+                                }
+                                app_state = AppState::LanguageSelect;
+                                list_state.select(Some(0));
+                            }
+                        }
+                        KeyCode::Backspace => {
+                            group_name.pop();
+                        }
+                        KeyCode::Char(c) => {
+                            group_name.push(c);
                         }
                         _ => {}
                     }
@@ -763,7 +1219,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     .first()
                                     .map(|c| c.language.clone())
                                     .unwrap_or_default();
-                                let stats = AppState::Stats {
+                                app_state = AppState::Stats {
                                     cards_reviewed: ratings_given.len(),
                                     ratings: ratings_given.clone(),
                                     average_quality: ratings_given.iter().sum::<u8>() as f64
@@ -771,16 +1227,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                                     language,
                                     cram: *cram,
                                 };
-                                app_state = stats;
                             }
                         }
-                        KeyCode::Char('b') if *current_index > 0 => {
-                            if let Some((card_id, old_progress)) = session_history.pop() {
-                                progress_store.update(card_id, old_progress);
-                                ratings_given.pop();
-                                *current_index -= 1;
-                                *show_back = true;
-                                *rating_pending = true;
+                        KeyCode::Char('b') | KeyCode::Char('B') => {
+                            if *current_index > 0 {
+                                if let Some((card_id, old_progress)) = session_history.pop() {
+                                    progress_store.update(card_id, old_progress);
+                                    ratings_given.pop();
+                                    *current_index -= 1;
+                                    *show_back = true;
+                                    *rating_pending = true;
+                                }
                             }
                         }
                         _ => {}
